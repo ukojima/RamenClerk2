@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
-    public Color startColor = Color.red;
-    public Color endColor = Color.blue;
-    public float timeDelay = 2f; // 変化までの待機時間
-    public float TIme = 4f;
+    public Color startcolor = Color.yellow;
+    public Color middlecolor = Color.green;
+    public Color endcolor = Color.blue;
+    public float time = 2f; // 変化までの待機時間
+    public float time2 = 4f;
+     public float time3 = 6f;
     private bool condition = false; // 変化条件
 
     void OnCollisionStay(Collision collision)
@@ -28,11 +30,23 @@ public class ColorChange : MonoBehaviour
         // 条件が満たされるまで待機
         yield return new WaitUntil(() => condition == true);
 
-        // 条件が満たされた後、timeDelay秒待機
-        yield return new WaitForSeconds(timeDelay);
+        // 条件が満たされた後、time秒待機
+        yield return new WaitForSeconds(time);
         
         // endColorに変化
-        gameObject.GetComponent<Renderer>().material.color = endColor;
+        gameObject.GetComponent<Renderer>().material.color = startcolor;
+        
+        //time2秒待機
+        yield return new WaitForSeconds(time2);
+        
+        // middleColorに変化
+        gameObject.GetComponent<Renderer>().material.color = middlecolor;
+
+        //time3秒待機
+        yield return new WaitForSeconds(time3);
+        
+        // middleColorに変化
+        gameObject.GetComponent<Renderer>().material.color = endcolor;
 
     }
 }

@@ -128,10 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5ddb4048cf5454b989805bf6f7bebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 1, g: 0, b: 0, a: 1}
-  endColor: {r: 0, g: 0, b: 1, a: 1}
-  timeDelay: 2
-  TIme: 4
+  startcolor: {r: 0.56078434, g: 1, b: 0.62087715, a: 1}
+  middlecolor: {r: 0.2704877, g: 0.5471698, b: 0.2704877, a: 1}
+  endcolor: {r: 0.15553577, g: 0.3207547, b: 0.17858958, a: 1}
+  time: 2
+  time2: 4
+  time3: 6
 --- !u!114 &4826536596592294892
 MonoBehaviour:
   m_ObjectHideFlags: 0
