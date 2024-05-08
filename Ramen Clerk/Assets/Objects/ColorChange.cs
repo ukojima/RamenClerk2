@@ -14,7 +14,7 @@ public class ColorChange : MonoBehaviour
     void OnCollisionStay(Collision collision)
     {
         // 衝突したオブジェクトがCube1タグを持っているか確認
-        if (collision.gameObject.CompareTag("Cube1"))
+        if (collision.gameObject.CompareTag("Oyu"))
         {
             condition = true; // 条件を満たす
         }
