@@ -2,33 +2,54 @@ using UnityEngine;
 
 public class MouseMover : MonoBehaviour
 {
-    float objPosZ;
+    private Vector3 offset;
+    private Camera cam;
+    private float zCoord;
+    private bool isDragging = false;
 
-    private void Start()
+    void Start()
     {
-        objPosZ = transform.position.z;
+        cam = Camera.main;
+    }
+
+    void OnMouseDown()
+    {
+        zCoord = cam.WorldToScreenPoint(gameObject.transform.position).z;
+        offset = gameObject.transform.position - GetMouseWorldPos();
+        isDragging = true;
+    }
+
+    void OnMouseUp()
+    {
+        isDragging = false;
     }
 
     void OnMouseDrag()
     {
-        Vector3 objPos = Camera.main.WorldToScreenPoint(transform.position);
-
-        Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, objPos.z);
-
-        transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+        if (isDragging)
+        {
+            transform.position = GetMouseWorldPos() + offset;
+        }
     }
 
-    private void Update()
+    private Vector3 GetMouseWorldPos()
     {
-        float wheelValue = Input.GetAxis("Mouse ScrollWheel");
+        Vector3 mousePoint = Input.mousePosition;
+        mousePoint.z = zCoord; // Use the Z coordinate stored on mouse down
+        return cam.ScreenToWorldPoint(mousePoint);
+    }
 
-        if (wheelValue == 0)
+    void Update()
+    {
+        if (isDragging)
         {
-            return;
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
+            if (scroll != 0.0f)
+            {
+                Vector3 position = transform.position;
+                position.z += scroll;
+                transform.position = position;
+            }
         }
-
-        objPosZ += wheelValue;
-
-        transform.position = new Vector3(transform.position.x, transform.position.y, objPosZ);
     }
 }
