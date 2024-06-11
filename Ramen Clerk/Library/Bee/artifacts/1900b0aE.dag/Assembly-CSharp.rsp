@@ -356,12 +356,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/CollisionDetecter.cs"
+"Assets/Collisiondetecter.cs"
 "Assets/CollisionGenerater.cs"
 "Assets/Cooking.cs"
 "Assets/FoodChecker.cs"
 "Assets/MouseMover.cs"
 "Assets/Objects/ColorChange.cs"
+"Assets/PlayerManager.cs"
 "Assets/RandomObjectGenerator.cs"
 -langversion:9.0
 

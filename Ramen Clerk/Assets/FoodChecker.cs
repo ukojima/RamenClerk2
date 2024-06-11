@@ -19,6 +19,7 @@ public class FoodChecker : MonoBehaviour
         if (other.gameObject.tag == OrderFood)
         {
             Debug.Log(OrderFood + "が正しく提供されました。");
+            Destroy(other.gameObject);
         }
         else
         {
