@@ -8,13 +8,13 @@ public class ColorChange : MonoBehaviour
     public Color endcolor = Color.blue;
     public float time = 2f; // 変化までの待機時間
     public float time2 = 4f;
-     public float time3 = 6f;
+    public float time3 = 6f;
     private bool condition = false; // 変化条件
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         // 衝突したオブジェクトがCube1タグを持っているか確認
-        if (collision.gameObject.CompareTag("Oyu"))
+        if (collision.gameObject.CompareTag("oyu"))
         {
             condition = true; // 条件を満たす
         }
