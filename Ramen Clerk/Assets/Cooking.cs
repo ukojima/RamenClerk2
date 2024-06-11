@@ -5,20 +5,13 @@ using UnityEngine;
 public class Cooking : MonoBehaviour
 {
     public string material1;
-    public string marerial2; 
+    public string material2; 
     public GameObject RamenSoup;
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        
-        if (collision.gameObject.CompareTag("soup") || collision.gameObject.CompareTag("kaeshi"))
-        {
-            Vector3 spawnPositions = collision.contacts[0].point;
-            Instantiate(RamenSoup, spawnPositions, Quaternion.identity);
-
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-        }
+        Debug.Log("Collision detected");
+        Debug.Log("Collision tag: " + collision.gameObject.tag);
     }
 
     // Start is called before the first frame update
@@ -30,6 +23,6 @@ public class Cooking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // 何もしない
     }
 }

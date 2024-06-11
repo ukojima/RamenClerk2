@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2468875574038843972}
   - component: {fileID: 8884334161371892506}
   - component: {fileID: -8865745322657622425}
-  - component: {fileID: 6709320847239413023}
   m_Layer: 0
   m_Name: soup
   m_TagString: soup
@@ -128,18 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ada4c2b9581c74484de21dfb0f448d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6709320847239413023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8691020841776884225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e0f53c0ec70ff40b5a791abf311e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material1: soup
-  marerial2: kaeshi
-  RamenSoup: {fileID: 142823125589343424, guid: 964def06d81a81648aaff50f3cc6f2f3, type: 3}
