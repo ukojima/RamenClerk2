@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638536744843522041
+      ticks: 638549774505420680
     m_Hash: 2584840489
   m_LockFileStatus:
     m_FilePath: C:/unity/RamenClerk/Ramen Clerk/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638536744843532045
+      ticks: 638549774505430682
     m_Hash: 368091525
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -116,6 +116,7 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
     compatible:
     - 1.17.2
     - 1.17.6
@@ -139,6 +140,7 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
     verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
@@ -336,6 +338,7 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
+    - 3.0.31
     compatible:
     - 3.0.15
     - 3.0.16
@@ -349,7 +352,8 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
-    verified: 3.0.28
+    - 3.0.31
+    verified: 3.0.31
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -3267,6 +3271,7 @@ m_ResolvedPackages:
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     compatible:
     - 1.4.2
     - 1.4.3
@@ -3284,6 +3289,7 @@ m_ResolvedPackages:
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest

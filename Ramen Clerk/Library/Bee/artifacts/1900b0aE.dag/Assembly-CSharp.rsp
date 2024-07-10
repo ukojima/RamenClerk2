@@ -359,6 +359,7 @@
 "Assets/CollisionDetecter.cs"
 "Assets/CollisionGenerater.cs"
 "Assets/Cooking.cs"
+"Assets/CustomerManager.cs"
 "Assets/FoodChecker.cs"
 "Assets/MouseMover.cs"
 "Assets/Objects/ColorChange.cs"

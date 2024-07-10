@@ -8,6 +8,7 @@ TagManager:
   - kaeshi
   - men
   - oyu
+  - customer
   layers:
   - Default
   - TransparentFX
