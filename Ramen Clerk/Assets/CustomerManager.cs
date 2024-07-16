@@ -7,8 +7,8 @@ public class CustomerManager : MonoBehaviour
     private float speed = 5.0f;
     [SerializeField] Transform[] targets;
     private int currentTargetIndex = 0;
- 
-    void Update()
+
+    void CustomerMover()
     {
         if (currentTargetIndex < targets.Length)
         {
@@ -21,6 +21,18 @@ public class CustomerManager : MonoBehaviour
                 // Move to the next target
                 currentTargetIndex++;
             }
+            
         }
+
+        if(Input.GetKey(KeyCode.P))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    void Update()
+    {
+      CustomerMover();
     }
 }
