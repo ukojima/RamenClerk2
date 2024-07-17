@@ -360,6 +360,7 @@
 "Assets/CollisionGenerater.cs"
 "Assets/Cooking.cs"
 "Assets/CustomerManager.cs"
+"Assets/CustomerSpawn.cs"
 "Assets/FoodChecker.cs"
 "Assets/MouseMover.cs"
 "Assets/Objects/ColorChange.cs"

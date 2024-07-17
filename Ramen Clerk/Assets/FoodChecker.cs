@@ -8,11 +8,8 @@ public class FoodChecker : MonoBehaviour
     public List<string> FoodList;
     public string OrderFood;   
     public TextMeshProUGUI orderText; 
+    public string customer;
 
-    void Start()
-    {
-        NewOrder();
-    }
 
     void NewOrder()
     {
@@ -22,7 +19,7 @@ public class FoodChecker : MonoBehaviour
         
         if (orderText != null)
         {
-            orderText.text = "注文は" + OrderFood;
+            orderText.text = /*"注文は" +*/ OrderFood;
         }
         else
         {
@@ -30,14 +27,25 @@ public class FoodChecker : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == OrderFood)
+        if(other.CompareTag(customer))
+        {
+            NewOrder();
+        }
+
+        if (other.CompareTag(OrderFood ))
         {
             Debug.Log(OrderFood + "が正しく提供されました。");
             Destroy(other.gameObject);
-            NewOrder(); 
+            NewOrder();
+            GameObject[] tagobjs = GameObject.FindGameObjectsWithTag("customer");
+            foreach(GameObject obj in tagobjs)
+            {
+                Destroy(obj);
+            }
         }
+        
         else
         {
             Debug.Log(other.gameObject.tag + "は間違っています。");
