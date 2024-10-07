@@ -9,6 +9,7 @@ TagManager:
   - men
   - oyu
   - customer
+  - counter
   layers:
   - Default
   - TransparentFX

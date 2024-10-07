@@ -7,11 +7,14 @@ public class CustomerManager : MonoBehaviour
     private float speed = 5.0f;
     [SerializeField] Transform[] targets;
     private int currentTargetIndex = 0;
-    private bool isMoving = true; // フラグを追加
+    private bool isMoving = true; 
+
+    [SerializeField] private int maxMoves = 5; // 移動回数
+    private int moveCount = 0; 
 
     void CustomerMover()
     {
-        if (isMoving && currentTargetIndex < targets.Length) // isMoving フラグをチェック
+        if (isMoving && currentTargetIndex < targets.Length && moveCount < maxMoves) // isMovingフラグと移動回数をチェック
         {
             Transform currentTarget = targets[currentTargetIndex];
             transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, speed * Time.deltaTime);
@@ -19,14 +22,20 @@ public class CustomerManager : MonoBehaviour
             // Check if the current target has been reached
             if (Vector3.Distance(transform.position, currentTarget.position) < 0.1f)
             {
-                // Move to the next 
+                // Move to the next target
                 currentTargetIndex++;
+                moveCount++; // 移動回数をカウント
+
+                // If the last target is reached, reset to the first target if under max moves
+                if (currentTargetIndex >= targets.Length)
+                {
+                    currentTargetIndex = 0; // 最初のターゲットに戻る
+                }
             }
         }
-
-        if (Input.GetKey(KeyCode.P))
+        else if (moveCount >= maxMoves)
         {
-            Destroy(gameObject);
+            isMoving = false; // 最大移動回数に達したら停止
         }
     }
 

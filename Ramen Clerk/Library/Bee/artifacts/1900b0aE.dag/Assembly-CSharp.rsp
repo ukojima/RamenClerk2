@@ -359,13 +359,17 @@
 "Assets/CollisionDetecter.cs"
 "Assets/CollisionGenerater.cs"
 "Assets/Cooking.cs"
+"Assets/CountTime.cs"
 "Assets/CustomerManager.cs"
+"Assets/CustomerOrder.cs"
 "Assets/CustomerSpawn.cs"
 "Assets/FoodChecker.cs"
 "Assets/MouseMover.cs"
 "Assets/Objects/ColorChange.cs"
 "Assets/PlayerManager.cs"
 "Assets/RandomObjectGenerator.cs"
+"Assets/Stock.cs"
+"Assets/StockFood.cs"
 -langversion:9.0
 
 /deterministic
