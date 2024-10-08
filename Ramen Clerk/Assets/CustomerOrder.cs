@@ -25,12 +25,14 @@ public class CustomerOrder : MonoBehaviour
         int randomIndex = Random.Range(0, FoodList.Count);
         OrderFood = FoodList[randomIndex];
         Debug.Log("注文は" + OrderFood);
+    }
 
-        /**if(fc.Check == true)
+    void LeaveCustomer()
+    {
+        if(fc != null)
         {
-            Debug.Log("破壊");
-            //Destroy(this.gameObject);
-        }**/
+            Destroy(this.gameObject);
+        }
     }
 
 
