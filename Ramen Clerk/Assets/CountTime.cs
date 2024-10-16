@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CountTime : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class CountTime : MonoBehaviour
         if (countdownSeconds <= 0)
         {
             // 0秒になったときの処理
-            UnityEditor.EditorApplication.isPlaying = false;
+            SceneManager.LoadScene("ResultScene");
         }
     }
 }

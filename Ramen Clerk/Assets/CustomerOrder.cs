@@ -27,13 +27,4 @@ public class CustomerOrder : MonoBehaviour
         Debug.Log("注文は" + OrderFood);
     }
 
-    void LeaveCustomer()
-    {
-        if(fc != null)
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-
 }

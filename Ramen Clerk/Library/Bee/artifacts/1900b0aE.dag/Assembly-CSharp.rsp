@@ -368,8 +368,8 @@
 "Assets/Objects/ColorChange.cs"
 "Assets/PlayerManager.cs"
 "Assets/RandomObjectGenerator.cs"
+"Assets/Score.cs"
 "Assets/Stock.cs"
-"Assets/StockFood.cs"
 -langversion:9.0
 
 /deterministic
