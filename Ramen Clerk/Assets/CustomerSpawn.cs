@@ -7,9 +7,9 @@ public class CustomerSpawn : MonoBehaviour
     public GameObject[] Customer;
     private float time;
     private int number;
-    int x =188;
-    int y =1;
-    int z = 13;
+    public int x =188;
+    public int y =1;
+    public int z = 13;
     public int min;
     public int max;
 

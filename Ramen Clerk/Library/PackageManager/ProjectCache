@@ -117,6 +117,8 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     - 2.4.3
+    - 2.4.4
+    - 2.5.1
     compatible:
     - 1.17.2
     - 1.17.6
@@ -141,6 +143,8 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     - 2.4.3
+    - 2.4.4
+    - 2.5.1
     verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
@@ -148,11 +152,11 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.services.core
     version: 1.4.2
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords:
   - backup
@@ -597,6 +601,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -618,6 +623,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -975,18 +981,18 @@ m_ResolvedPackages:
     - 1.8.7
     verified: 1.6.5
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -3159,6 +3165,7 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3176,6 +3183,7 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
@@ -3292,18 +3300,18 @@ m_ResolvedPackages:
     - 1.13.0
     verified: 1.4.3
   dependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords: []
   registry:
