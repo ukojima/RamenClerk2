@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5690517554060396705}
   - component: {fileID: 2518836738606455168}
   - component: {fileID: 5176193027490972885}
+  - component: {fileID: -293225134197553734}
   m_Layer: 0
   m_Name: RamenSoup
   m_TagString: Untagged
@@ -112,5 +113,17 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-293225134197553734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142823125589343424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ada4c2b9581c74484de21dfb0f448d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -19,7 +19,6 @@ public class RandomObjectGenerator : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            
             GameObject newTool = Instantiate(tools[i], spawnPositions[i], Quaternion.identity);
         }
     }

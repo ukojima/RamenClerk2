@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Oyu
   - soup
   - kaeshi
+  - men
+  - oyu
+  - customer
+  - counter
   layers:
   - Default
   - TransparentFX
