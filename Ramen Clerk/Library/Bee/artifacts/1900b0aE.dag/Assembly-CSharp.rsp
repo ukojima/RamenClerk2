@@ -362,6 +362,7 @@
 "Assets/CountTime.cs"
 "Assets/CustomerManager.cs"
 "Assets/CustomerOrder.cs"
+"Assets/CustomerSpawn.cs"
 "Assets/FoodChecker.cs"
 "Assets/MouseMover.cs"
 "Assets/Objects/ColorChange.cs"
