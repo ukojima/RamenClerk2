@@ -363,6 +363,7 @@
 "Assets/MouseMover.cs"
 "Assets/NPCManager.cs"
 "Assets/Objects/ColorChange.cs"
+"Assets/PlayerManager.cs"
 "Assets/RandomObjectGenerator.cs"
 -langversion:9.0
 
